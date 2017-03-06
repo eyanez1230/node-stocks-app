@@ -30,7 +30,7 @@ app.use('/src/client', express.static(__dirname + '/src/client'));
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
 
 app.get("/", function(req, res, next) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/src/client/index.html'));
 });
 
 // app.use(function(req, res, next) {
